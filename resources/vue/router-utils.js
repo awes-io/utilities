@@ -45,7 +45,7 @@ export function setParam(queryObj, push = true) {
  * Component mixin - extends default $router functional
  */
 
-export const routerMixin {
+export const routerMixin = {
 
     beforeCreate() {
         this.$router.$setParam = setParam
