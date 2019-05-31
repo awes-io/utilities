@@ -1,0 +1,20 @@
+{
+    "name": "@awes-io/utilities",
+    "version": "1.0.0",
+    "description": "Utilities package for frontend",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:awes-io/utilities.git"
+    },
+    "keywords": [
+        "utilities",
+        "vue",
+        "helpers"
+    ],
+    "author": "AwesCode (https://www.awescode.de/)",
+    "license": "ISC"
+}
