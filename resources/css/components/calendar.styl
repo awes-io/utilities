@@ -1,0 +1,26 @@
+calendar_width = 300px
+
+.ui-calendar
+    width calendar_width
+    max-width 100%
+    
+    &__days,
+    &__weekdays
+        display flex
+        flex-wrap wrap
+    
+    &__weekday
+        text-align center
+    
+    &__day,
+    &__weekday
+        width (100% / 7.0001)
+    
+    &__day
+
+        &.is-selected
+            box-shadow 0 0 5px color_accent
+
+        &.is-edge
+            pointer-events none
+            opacity .5

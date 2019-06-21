@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar matches overall snapshot 1`] = `
+"<div class=\\"ui-calendar\\"><div class=\\"ui-calendar__weekdays\\"><span class=\\"ui-calendar__weekday\\">
+                    SU
+                </span><span class=\\"ui-calendar__weekday\\">
+                    MO
+                </span><span class=\\"ui-calendar__weekday\\">
+                    TU
+                </span><span class=\\"ui-calendar__weekday\\">
+                    WE
+                </span><span class=\\"ui-calendar__weekday\\">
+                    TH
+                </span><span class=\\"ui-calendar__weekday\\">
+                    FR
+                </span><span class=\\"ui-calendar__weekday\\">
+                    SA
+                </span></div> <div class=\\"ui-calendar__days\\"><button class=\\"ui-calendar__day is-edge\\">
+                    30
+                </button><button class=\\"ui-calendar__day\\">
+                    1
+                </button><button class=\\"ui-calendar__day\\">
+                    2
+                </button><button class=\\"ui-calendar__day\\">
+                    3
+                </button><button class=\\"ui-calendar__day\\">
+                    4
+                </button><button class=\\"ui-calendar__day\\">
+                    5
+                </button><button class=\\"ui-calendar__day\\">
+                    6
+                </button><button class=\\"ui-calendar__day\\">
+                    7
+                </button><button class=\\"ui-calendar__day\\">
+                    8
+                </button><button class=\\"ui-calendar__day\\">
+                    9
+                </button><button class=\\"ui-calendar__day\\">
+                    10
+                </button><button class=\\"ui-calendar__day\\">
+                    11
+                </button><button class=\\"ui-calendar__day\\">
+                    12
+                </button><button class=\\"ui-calendar__day\\">
+                    13
+                </button><button class=\\"ui-calendar__day\\">
+                    14
+                </button><button class=\\"ui-calendar__day\\">
+                    15
+                </button><button class=\\"ui-calendar__day\\">
+                    16
+                </button><button class=\\"ui-calendar__day\\">
+                    17
+                </button><button class=\\"ui-calendar__day\\">
+                    18
+                </button><button class=\\"ui-calendar__day\\">
+                    19
+                </button><button class=\\"ui-calendar__day\\">
+                    20
+                </button><button class=\\"ui-calendar__day\\">
+                    21
+                </button><button class=\\"ui-calendar__day\\">
+                    22
+                </button><button class=\\"ui-calendar__day\\">
+                    23
+                </button><button class=\\"ui-calendar__day\\">
+                    24
+                </button><button class=\\"ui-calendar__day\\">
+                    25
+                </button><button class=\\"ui-calendar__day\\">
+                    26
+                </button><button class=\\"ui-calendar__day\\">
+                    27
+                </button><button class=\\"ui-calendar__day\\">
+                    28
+                </button><button class=\\"ui-calendar__day\\">
+                    29
+                </button><button class=\\"ui-calendar__day\\">
+                    30
+                </button><button class=\\"ui-calendar__day\\">
+                    31
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    1
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    2
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    3
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    4
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    5
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    6
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    7
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    8
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    9
+                </button><button class=\\"ui-calendar__day is-edge\\">
+                    10
+                </button></div></div>"
+`;

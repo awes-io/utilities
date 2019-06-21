@@ -4,7 +4,7 @@ import {
     pathToArr,
     get,
     set
-} from './object'
+} from '../object'
 
 
 describe('The isObject method', () => {

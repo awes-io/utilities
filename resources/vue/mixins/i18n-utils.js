@@ -1,4 +1,4 @@
-import { get } from '../js/object'
+import { get } from '../../js/utils/object'
 
 export default {
 
