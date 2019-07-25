@@ -14,19 +14,22 @@
                 </slot>
             </template>
         </div>
-        <div class="ui-calendar__days">
+        <div class="ui-calendar__days"
+            v-on="this.$slots.day ? {} : { click: _handleDayClick }">
             <template
-                v-for="{ date, timestamp, isSelected, isEdge } in this.days"
+                v-for="({ date, isSelected, isEdge, isToday }, i) in this.days"
             >
-                <slot name="day" v-bind="{date, timestamp, isSelected, isEdge}">
+                <slot name="day" v-bind="{index: i, date, isSelected, isEdge, isToday}">
                     <button
                         class="ui-calendar__day"
                         :class="{
                             'is-selected': isSelected,
-                            'is-edge': isEdge
+                            'is-edge': isEdge,
+                            'is-today': isToday
                         }"
-                        :key="timestamp"
-                        @click="! isEdge && $emit('input', { date, timestamp, isSelected })"
+                        :disabled="isEdge"
+                        :data-index="! isEdge && i"
+                        :key="date.toString()"
                     >
                         {{ date.getDate() }}
                     </button>
@@ -38,7 +41,8 @@
 
 
 <script>
-import { weekdaysNames, getCalendarDays } from '../../js/utils/date-time'
+import lang from '../../lang/calendar'
+import { getCalendarDays } from '../../js/utils/date-time'
 import i18nMixin from '../mixins/i18n-utils'
 
 export default {
@@ -51,7 +55,7 @@ export default {
 
     _config: {
         lang: {
-            weekdays: weekdaysNames
+            weekdays: lang.weekdays
         }
     },
 
@@ -74,7 +78,7 @@ export default {
          
         firstDay: {
             type: Number,
-            default: 0,
+            default: 1,
             validator(dayNum) {
                 return dayNum > -1 && dayNum < 7
             }
@@ -85,6 +89,10 @@ export default {
 
 
     computed: {
+
+        todayTimestamp() {
+            return this._toDayTimestamp( new Date() )
+        },
     
         days() {
             return getCalendarDays(this.month, this.year, this.firstDay)
@@ -94,7 +102,8 @@ export default {
                         date,
                         timestamp,
                         isSelected: this.selected.includes(timestamp),
-                        isEdge: date.getMonth() !== +this.month
+                        isEdge: date.getMonth() !== +this.month,
+                        isToday: timestamp === this.todayTimestamp
                     }
                 })
         },
@@ -106,16 +115,23 @@ export default {
 
         selected() {
             return Array.isArray(this.value) ? 
-                this.value.map( this._toTimeStamp ) :
-                [ this._toDayTimeStamp(this.value) ]
+                this.value.map( this._toDayTimestamp ) :
+                [ this._toDayTimestamp(this.value) ]
         }
     },
 
 
     methods: {
 
-        _toDayTimeStamp(input) {
+        _toDayTimestamp(input) {
             return new Date(input).setHours(0,0,0,0)
+        },
+
+        _handleDayClick($event) {
+            //
+            let index = $event.target.getAttribute('data-index')
+            if ( ! index ) return
+            this.$emit('input', this.days[ +index ])
         }
     }
 }

@@ -8,9 +8,10 @@ export default {
     },
 
     computed: {
-
+        // TODO: fix objects merging (replace ???)
+        // TODO: write test for external lang prop
         '$lang': function() {
-            return { ...this.lang, ...get(this.$options, '_config.lang', {}) }
+            return { ...get(this.$options, '_config.lang', {}), ...this.lang }
         }
     }
 }
