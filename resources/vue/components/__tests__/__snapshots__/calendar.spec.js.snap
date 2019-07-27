@@ -2,102 +2,102 @@
 
 exports[`Calendar matches overall snapshot 1`] = `
 "<div class=\\"ui-calendar\\"><div class=\\"ui-calendar__weekdays\\"><span class=\\"ui-calendar__weekday\\">
-                    SU
+                    Mo
                 </span><span class=\\"ui-calendar__weekday\\">
-                    MO
+                    Tu
                 </span><span class=\\"ui-calendar__weekday\\">
-                    TU
+                    We
                 </span><span class=\\"ui-calendar__weekday\\">
-                    WE
+                    Th
                 </span><span class=\\"ui-calendar__weekday\\">
-                    TH
+                    Fr
                 </span><span class=\\"ui-calendar__weekday\\">
-                    FR
+                    Sa
                 </span><span class=\\"ui-calendar__weekday\\">
-                    SA
-                </span></div> <div class=\\"ui-calendar__days\\"><button class=\\"ui-calendar__day is-edge\\">
-                    30
-                </button><button class=\\"ui-calendar__day\\">
+                    Su
+                </span></div> <div class=\\"ui-calendar__days\\"><button data-index=\\"0\\" class=\\"ui-calendar__day\\">
                     1
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"1\\" class=\\"ui-calendar__day\\">
                     2
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"2\\" class=\\"ui-calendar__day\\">
                     3
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"3\\" class=\\"ui-calendar__day\\">
                     4
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"4\\" class=\\"ui-calendar__day\\">
                     5
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"5\\" class=\\"ui-calendar__day\\">
                     6
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"6\\" class=\\"ui-calendar__day\\">
                     7
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"7\\" class=\\"ui-calendar__day\\">
                     8
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"8\\" class=\\"ui-calendar__day\\">
                     9
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"9\\" class=\\"ui-calendar__day\\">
                     10
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"10\\" class=\\"ui-calendar__day\\">
                     11
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"11\\" class=\\"ui-calendar__day\\">
                     12
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"12\\" class=\\"ui-calendar__day\\">
                     13
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"13\\" class=\\"ui-calendar__day\\">
                     14
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"14\\" class=\\"ui-calendar__day\\">
                     15
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"15\\" class=\\"ui-calendar__day\\">
                     16
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"16\\" class=\\"ui-calendar__day\\">
                     17
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"17\\" class=\\"ui-calendar__day\\">
                     18
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"18\\" class=\\"ui-calendar__day\\">
                     19
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"19\\" class=\\"ui-calendar__day\\">
                     20
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"20\\" class=\\"ui-calendar__day\\">
                     21
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"21\\" class=\\"ui-calendar__day\\">
                     22
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"22\\" class=\\"ui-calendar__day\\">
                     23
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"23\\" class=\\"ui-calendar__day\\">
                     24
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"24\\" class=\\"ui-calendar__day\\">
                     25
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"25\\" class=\\"ui-calendar__day\\">
                     26
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"26\\" class=\\"ui-calendar__day is-today\\">
                     27
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"27\\" class=\\"ui-calendar__day\\">
                     28
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"28\\" class=\\"ui-calendar__day\\">
                     29
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"29\\" class=\\"ui-calendar__day\\">
                     30
-                </button><button class=\\"ui-calendar__day\\">
+                </button><button data-index=\\"30\\" class=\\"ui-calendar__day\\">
                     31
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     1
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     2
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     3
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     4
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     5
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     6
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     7
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     8
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     9
-                </button><button class=\\"ui-calendar__day is-edge\\">
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
                     10
+                </button><button disabled=\\"disabled\\" class=\\"ui-calendar__day is-edge\\">
+                    11
                 </button></div></div>"
 `;

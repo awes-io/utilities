@@ -14,4 +14,19 @@ describe('Calendar', () => {
 
         expect(wrapper.html()).toMatchSnapshot()
     })
+
+    it('passes timestamp to "day" scoped slot', () => {
+
+        const wrapper = mount(uiCalendar, {
+            propsData: {
+                month: 6,
+                year: 2019,
+            },
+            scopedSlots: {
+                day: `<p class="day">{{ props.timestamp }}</p>`
+            }
+        })
+
+        expect(wrapper.find('.day').text()).toEqual('1561928400000')
+    })
 })

@@ -1,6 +1,6 @@
 {
     "name": "@awes-io/utilities",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Utilities package for frontend",
     "main": "index.js",
     "scripts": {

@@ -17,9 +17,9 @@
         <div class="ui-calendar__days"
             v-on="this.$slots.day ? {} : { click: _handleDayClick }">
             <template
-                v-for="({ date, isSelected, isEdge, isToday }, i) in this.days"
+                v-for="({ date, timestamp, isSelected, isEdge, isToday }, i) in this.days"
             >
-                <slot name="day" v-bind="{index: i, date, isSelected, isEdge, isToday}">
+                <slot name="day" v-bind="{index: i, date, timestamp, isSelected, isEdge, isToday}">
                     <button
                         class="ui-calendar__day"
                         :class="{
