@@ -1,5 +1,10 @@
 <template>
     <div class="ui-calendar">
+
+        <!-- header -->
+        <slot name="header" />
+
+        <!-- weekdays -->
         <div class="ui-calendar__weekdays">
             <template
                 v-for="weekday in weekdays"
@@ -13,7 +18,9 @@
                     </span>
                 </slot>
             </template>
-        </div>
+        </div><!-- / weekdays -->
+
+        <!-- days -->
         <div class="ui-calendar__days"
             v-on="this.$slots.day ? {} : { click: _handleDayClick }">
             <template
@@ -21,6 +28,7 @@
             >
                 <slot name="day" v-bind="{index: i, date, timestamp, isSelected, isEdge, isToday}">
                     <button
+                        type="button"
                         class="ui-calendar__day"
                         :class="{
                             'is-selected': isSelected,
@@ -35,7 +43,10 @@
                     </button>
                 </slot>
             </template>
-        </div>
+        </div><!-- / days -->
+
+        <!-- footer -->
+        <slot name="footer" />
     </div>
 </template>
 

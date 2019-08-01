@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/css/main.css">
 <body>
     <div id="app">
+        <ui-calendar-header></ui-calendar-header>
         <ui-calendar :month="6" :year="2019" :lang="{weekdays: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']}">
-            <p class="day" slot="day" slot-scope="props">{{ props.timestamp }}</p>
         </ui-calendar>
     </div>
     <script src="/js/main.js"></script>
